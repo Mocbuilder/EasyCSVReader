@@ -11,9 +11,14 @@
     <Description>A C# library for easily read CSV files.</Description>
     <PackageProjectUrl>https://github.com/Mocbuilder/EasyCSVReader</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Mocbuilder/EasyCSVReader</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Update="sample.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

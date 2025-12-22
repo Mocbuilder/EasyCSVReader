@@ -8,11 +8,11 @@ namespace EasyCSVReader
 {
     public class Collumn
     {
-        public List<Row> Text { get; set; }
+        public List<Row> Rows { get; set; }
 
-        public Collumn(List<Row> text)
+        public Collumn(List<Row> rows)
         {
-            Text = text;
+            Rows = rows;
         }
     }
 }

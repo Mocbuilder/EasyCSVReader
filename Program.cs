@@ -18,7 +18,7 @@
 
             foreach (var column in columns)
             {
-                foreach (var row in column.Text)
+                foreach (var row in column.Rows)
                 {
                     Console.WriteLine(row.Text);
                 }

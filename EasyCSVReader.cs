@@ -10,12 +10,14 @@ namespace EasyCSVReader
     {
         private List<Row> _rows = new List<Row>();
         public bool IgnoreHeaderRows { get; set; } = false;
+        public char Delimiter { get; set; } = ',';
 
         public EasyCSVReader() { }
 
-        public EasyCSVReader(bool ignoreHeaderRows)
+        public EasyCSVReader(bool ignoreHeaderRows, char delimiter)
         {
             IgnoreHeaderRows = ignoreHeaderRows;
+            Delimiter = delimiter;
         }
 
         public List<Row> ReadAllRows(string filePath)
@@ -71,7 +73,7 @@ namespace EasyCSVReader
                     }
 
                     Row newRow = new Row(columns[i]);
-                    collumnsList[i].Text.Add(newRow);
+                    collumnsList[i].Rows.Add(newRow);
                 }
 
                 isFirstRow = false;
