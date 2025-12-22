@@ -1,10 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>EasyCSVReader</Title>
+    <Authors>Mocbuilder</Authors>
+    <Description>A C# library for easily read CSV files.</Description>
+    <PackageProjectUrl>https://github.com/Mocbuilder/EasyCSVReader</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Mocbuilder/EasyCSVReader</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
