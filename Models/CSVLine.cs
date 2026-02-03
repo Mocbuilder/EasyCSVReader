@@ -9,6 +9,6 @@ namespace EasyCSVReader.Models
     public class CSVLine
     {
         public int _lineNumber;
-        public List<string> _fields;
+        public List<string> _fields = new List<string>();
     }
 }

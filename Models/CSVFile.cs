@@ -38,7 +38,7 @@ namespace EasyCSVReader.Models
                 CSVLine csvLine = new CSVLine
                 {
                     _lineNumber = lineNumber,
-                    _values = values
+                    _fields = values
                 };
 
                 if (_ignoreHeader && lineNumber == 0)
@@ -53,7 +53,7 @@ namespace EasyCSVReader.Models
 
         public void WriteLines()
         {
-            File.WriteAllLines(_filePath, _lines.Select(l => string.Join(_delimiter, l._values)));
+            File.WriteAllLines(_filePath, _lines.Select(l => string.Join(_delimiter, l._fields)));
         }
     }
 }
