@@ -26,7 +26,7 @@ namespace EasyCSVReader
 
         public CSVFile GetCSVFile(string filePath, char delimiter)
         {
-            CSVFile csvFile = new CSVFile(filePath, delimiter);
+            CSVFile csvFile = new CSVFile(filePath, delimiter, _ignoreHeader);
             _csvFiles.Add(csvFile);
             return csvFile;
         }
